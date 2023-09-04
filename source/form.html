@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Berries</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__logo" href="index.html">
+        <picture></picture>
+      </a>
+      <ul class="header__list">
+        <li class="header__item">
+          <a class="header__link" href="#">Каталог</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Новости</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Контакты</a>
+        </li>
+        <li class="header__item">
+          <a class="header__link" href="#">Заказы</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="order">
+      <div class="order__wrapper">
+        <h1 class="order__title">Закажи ягоды</h1>
+        <p class="order__description">Мы соберем для вас ягоды и доставим их в удобном для вас виде - свежими или
+          замороженными</p>
+      </div>
+    </section>
+    <form action="https://echo.htmlacademy.ru/" method="get">
+      <section class="berries">
+        <h2 class="berries__title">Выберите ягоды</h2>
+        <ul class="berries__list">
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries">
+              <span class="berries__check-box"></span>
+              брусника
+            </label>
+          </li>
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries">
+              <span class="berries__check-box"></span>
+              крыжовник
+            </label>
+          </li>
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries">
+              <span class="berries__check-box"></span>
+              вишня
+            </label>
+          </li>
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries">
+              <span class="berries__check-box"></span>
+              малина
+            </label>
+          </li>
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries">
+              <span class="berries__check-box"></span>
+              голубика
+            </label>
+          </li>
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries" disabled>
+              <span class="berries__check-box"></span>
+              морошка
+            </label>
+          </li>
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries">
+              <span class="berries__check-box"></span>
+              ежевика
+            </label>
+          </li>
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries" disabled>
+              <span class="berries__check-box"></span>
+              черника
+            </label>
+          </li>
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries">
+              <span class="berries__check-box"></span>
+              клубника
+            </label>
+          </li>
+          <li class="berries__item">
+            <label class="berries__description">
+              <input class="berries__check" type="checkbox" name="berries">
+              <span class="berries__check-box"></span>
+              клюква
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="storage">
+        <h3 class="storage__title">Вид хранения</h3>
+        <ul class="storage__list">
+          <li class="storage__item">
+            <label class="storage__description">
+              <input class="storage__check" type="checkbox" name="storage">
+              <span class="storage__check-box"></span>
+              свежие ягоды
+            </label>
+          </li>
+          <li class="storage__item">
+            <label class="storage__description">
+              <input class="storage__check" type="checkbox" name="storage">
+              <span class="storage__check-box"></span>
+              замороженные ягоды
+            </label>
+          </li>
+          <li class="storage__item">
+            <label class="storage__description">
+              <input class="storage__check" type="checkbox" name="storage">
+              <span class="storage__check-box"></span>
+              ягодные миксы
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="delivery">
+        <h4 class="delivery__title">Способ доставки</h4>
+        <ul class="delivery__list">
+          <li class="delivery__item">
+            <label class="delivery__description">
+              <input class="delivery__radio" type="radio" name="delivery" checked>
+              <span class="delivery__radio-box"></span>
+              Доставка
+              (по СПБ в пределах
+              КАД)
+            </label>
+          </li>
+          <li class="delivery__item">
+            <label class="delivery__description">
+              <input class="delivery__radio" type="radio" name="delivery">
+              <span class="delivery__radio-box"></span>
+              Самовывоз
+              (Набережная Обводного канала, 101)
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="requisites">
+        <h5 class="requisites__title">Ваши контакты</h5>
+        <div class="requisites__name">
+          <label class="requisites__name-description" for="name">Имя<span style="color:red">*</span></label>
+          <input class="requisites__name-field" id="name" type="text" placeholder="Как к вам обращаться?"
+            name="requisites" required>
+        </div>
+        <div class="requisites__tel">
+          <label class="requisites__tel-description" for="tel">Телефон<span style="color:red">*</span></label>
+          <input class="requisites__tel-field" id="tel" type="tel" placeholder="+7 ххх ххх хх хх" name="requisites"
+            required>
+        </div>
+        <div class="requisites__email">
+          <label class="requisites__email-description" for="email">Email<span style="color:red">*</span></label>
+          <input class="requisites__email-field" id="email" type="email" placeholder="Ваш email" name="requisites"
+            required>
+        </div>
+        <div class="requisites__adress">
+          <label class="requisites__adress-description" for="adress">Адрес<span style="color:red">*</span></label>
+          <input class="requisites__adress-field" id="adress" type="text" placeholder="Адрес в Санкт-Петербурге"
+            name="requisites" required>
+        </div>
+        <div class="requisites__additionally">
+          <p class="requisites__additionally-description">Пожелания к заказу</p>
+          <textarea class="requisites__additionally-area" placeholder="Чем мы можем вам помочь?"></textarea>
+        </div>
+        <button class="requisites__button button" type="submit">Заказать</button>
+      </section>
+    </form>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h6 class="contacts__title">Где забрать ягоды?</h6>
+        <p class="contacts__description">Забери ягоды с нашего склада по адресу:</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <svg class="contacts__item-icon" width="" height="">
+              <use xlink:href=""></use>
+            </svg>
+            <p class="contacts__item-description">Набережная Обводного канала, 101</p>
+          </li>
+          <li class="contacts__item">
+            <svg class="contacts__item-icon" width="" height="">
+              <use xlink:href=""></use>
+            </svg>
+            <p class="contacts__item-description">+ 7 910 524 41 18</p>
+          </li>
+          <li class="contacts__item">
+            <svg class="contacts__item-icon" width="" height="">
+              <use xlink:href=""></use>
+            </svg>
+            <p class="contacts__item-description">info@yagoda.ru</p>
+          </li>
+        </ul>
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1494.8857145088605!2d30.330875105219373!3d59.91350160384013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1693814723738!5m2!1sru!2sru"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo" href="#">
+        <picture></picture>
+      </a>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link">
+            <svg class="footer__link-icon" width="" height="">
+              <use xlink:href=""></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link">
+            <svg class="footer__link-icon" width="" height="">
+              <use xlink:href=""></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link">
+            <svg class="footer__link-icon" width="" height="">
+              <use xlink:href=""></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__intensive" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+        <svg class="footer__intensive-icon" width="" height="">
+          <use xlink:href=""></use>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="./js/script.js" defer></script>
+</body>
+
+</html>
