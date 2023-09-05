@@ -4,14 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Berries</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="./fonts/Comfortaa/Comfortaa-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/Raleway/Raleway-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
 <body class="page-body">
+
   <header class="header">
     <div class="header__wrapper">
-      <picture></picture>
+      <a class="header__logo" href="#">
+        <span class="visually-hidden">Логотип магазина.</span>
+      </a>
+      <button class="header__toggle" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню.</span>
+      </button>
       <ul class="header__list">
         <li class="header__item">
           <a class="header__link" href="#">Каталог</a>
@@ -31,38 +53,39 @@
 
   <main class="page-main">
     <section class="promo">
-      <div class="promo__wrapper">
-        <h1 class="promo__title">Ягоды с доставкой </h1>
-        <ul class="promo__list">
-          <li class="promo__item">
-            <svg class="promo__item-icon" width="" height="">
-              <use xlink:href=""></use>
-            </svg>
-            <p class="promo__item-description">Отборные ягоды</p>
-          </li>
-          <li class="promo__item">
-            <svg class="promo__item-icon" width="" height="">
-              <use xlink:href=""></use>
-            </svg>
-            <p class="promo__item-description">Натуральный вкус сохранён методом шоковой заморозки</p>
-          </li>
-          <li class="promo__item">
-            <svg class="promo__item-icon" width="" height="">
-              <use xlink:href=""></use>
-            </svg>
-            <p class="promo__item-description">Доставка по Санкт-Петербургу</p>
-          </li>
-        </ul>
-        <a class="promo__link button" href="form.html">Заказать</a>
-        <picture></picture>
-      </div>
+      <h1 class="promo__title">Ягоды с доставкой </h1>
+      <ul class="promo__list">
+        <li class="promo__item">
+          <svg class="promo__item-icon" width="18" height="20">
+            <use href="./img/icons/stack.svg#leaf"></use>
+          </svg>
+          <p class="promo__item-description">Отборные ягоды</p>
+        </li>
+        <li class="promo__item">
+          <svg class="promo__item-icon" width="24" height="24">
+            <use xlink:href="./img/icons/stack.svg#snowflake"></use>
+          </svg>
+          <p class="promo__item-description">Натуральный вкус сохранён методом шоковой заморозки</p>
+        </li>
+        <li class="promo__item">
+          <svg class="promo__item-icon" width="32" height="32">
+            <use xlink:href="./img/icons/stack.svg#moto"></use>
+          </svg>
+          <p class="promo__item-description">Доставка по Санкт-Петербургу</p>
+        </li>
+      </ul>
+      <a class="promo__link button" href="form.html">Заказать</a>
     </section>
     <section class="catalog">
       <h2 class="catalog__title">Каталог</h2>
       <ul class="catalog__list">
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <picture></picture>
+            <picture>
+              <source type="image/webp" srcset="./img/index/raspberry.webp, ./img/index/raspberry@2x.webp 2x">
+              <img class="catalog__image" src="./img/index/raspberry.jpg" srcset="./img/index/raspberry@2x.jpg 2x"
+                width="344" height="180" alt="Малина.">
+            </picture>
             <h3 class="catalog__title">Малина</h3>
           </a>
           <div class="catalog__container">
@@ -73,7 +96,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <picture></picture>
+            <picture>
+              <source type="image/webp" srcset="./img/index/blackberry.webp, ./img/index/blackberry@2x.webp 2x">
+              <img class="catalog__image" src="./img/index/blackberry.jpg" srcset="./img/index/blackberry@2x.jpg 2x"
+                width="344" height="180" alt="Ежевика.">
+            </picture>
             <h3 class="catalog__title">Ежевика</h3>
           </a>
           <div class="catalog__container">
@@ -84,7 +111,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <picture></picture>
+            <picture>
+              <source type="image/webp" srcset="./img/index/cowberry.webp, ./img/index/cowberry@2x.webp 2x">
+              <img class="catalog__image" src="./img/index/cowberry.jpg" srcset="./img/index/cowberry@2x.jpg 2x"
+                width="344" height="180" alt="Брусника.">
+            </picture>
             <h3 class="catalog__title">Брусника</h3>
           </a>
           <div class="catalog__container">
@@ -95,7 +126,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <picture></picture>
+            <picture>
+              <source type="image/webp" srcset="./img/index/strawberry.webp, ./img/index/strawberry@2x.webp 2x">
+              <img class="catalog__image" src="./img/index/strawberry.jpg" srcset="./img/index/strawberry@2x.jpg 2x"
+                width="344" height="180" alt="Клубника.">
+            </picture>
             <h3 class="catalog__title">Клубника</h3>
           </a>
           <div class="catalog__container">
@@ -106,7 +141,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <picture></picture>
+            <picture>
+              <source type="image/webp" srcset="./img/index/cherry.webp, ./img/index/cherry@2x.webp 2x">
+              <img class="catalog__image" src="./img/index/cherry.jpg" srcset="./img/index/cherry@2x.jpg 2x" width="344"
+                height="180" alt="Вишня.">
+            </picture>
             <h3 class="catalog__title">Вишня</h3>
           </a>
           <div class="catalog__container">
@@ -117,7 +156,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <picture></picture>
+            <picture>
+              <source type="image/webp" srcset="./img/index/gooseberry.webp, ./img/index/gooseberry@2x.webp 2x">
+              <img class="catalog__image" src="./img/index/gooseberry.jpg" srcset="./img/index/gooseberry@2x.jpg 2x"
+                width="344" height="180" alt="Крыжовник.">
+            </picture>
             <h3 class="catalog__title">Крыжовник</h3>
           </a>
           <div class="catalog__container">
@@ -128,7 +171,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <picture></picture>
+            <picture>
+              <source type="image/webp" srcset="./img/index/blueberry.webp, ./img/index/blueberry@2x.webp 2x">
+              <img class="catalog__image" src="./img/index/blueberry.jpg" srcset="./img/index/blueberry@2x.jpg 2x"
+                width="344" height="180" alt="Голубика.">
+            </picture>
             <h3 class="catalog__title">Голубика</h3>
           </a>
           <div class="catalog__container">
@@ -139,7 +186,11 @@
         </li>
         <li class="catalog__item">
           <a class="catalog__link" href="#">
-            <picture></picture>
+            <picture>
+              <source type="image/webp" srcset="./img/index/cranberry.webp, ./img/index/cranberry@2x.webp 2x">
+              <img class="catalog__image" src="./img/index/cranberry.jpg" srcset="./img/index/cranberry@2x.jpg 2x"
+                width="344" height="180" alt="Клюква.">
+            </picture>
             <h3 class="catalog__title">Клюква</h3>
           </a>
           <div class="catalog__container">
@@ -159,8 +210,8 @@
             отборные ягоды можно приобрести свежими от 200 гр, или замороженными от 1 кг. Поторопитесь, сезон клубники
             короткий и свежие ягоды скоро закончатся.</p>
           <span class="news__item-date">22 июня 2022</span>
-          <svg class="news__item-icon" width="" height="">
-            <use xlink:href=""></use>
+          <svg class="news__item-icon" width="96" height="40">
+            <use xlink:href="./img/icons/stack.svg#news-leaf"></use>
           </svg>
         </li>
         <li class="news__item">
@@ -168,8 +219,8 @@
           <p class="news__item-description">Свежие ягоды урожая этого года со скидкой 15%. Клубнику, малину, голубику,
             вишню доставим от 200 гр.</p>
           <span class="news__item-date">15 июня 2022</span>
-          <svg class="news__item-icon" width="" height="">
-            <use xlink:href=""></use>
+          <svg class="news__item-icon" width="96" height="40">
+            <use xlink:href="./img/icons/stack.svg#news-leaf"></use>
           </svg>
         </li>
         <li class="news__item">
@@ -179,8 +230,8 @@
             напитков. Все ягоды замораживаются методом шоковой заморозки, что позволяет сохранить
             их естественный вкус и аромат.</p>
           <span class="news__item-date">02 июня 2022</span>
-          <svg class="news__item-icon" width="" height="">
-            <use xlink:href=""></use>
+          <svg class="news__item-icon" width="96" height="40">
+            <use xlink:href="./img/icons/stack.svg#news-leaf"></use>
           </svg>
         </li>
       </ul>
@@ -191,68 +242,73 @@
         <p class="contacts__description">Забери ягоды с нашего склада по адресу:</p>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <svg class="contacts__item-icon" width="" height="">
-              <use xlink:href=""></use>
+            <svg class="contacts__item-icon" width="16" height="24">
+              <use xlink:href="./img/icons/stack.svg#contacts-leaf"></use>
             </svg>
             <p class="contacts__item-description">Набережная Обводного канала, 101</p>
           </li>
           <li class="contacts__item">
-            <svg class="contacts__item-icon" width="" height="">
-              <use xlink:href=""></use>
+            <svg class="contacts__item-icon" width="16" height="20">
+              <use xlink:href="./img/icons/stack.svg#phone"></use>
             </svg>
             <p class="contacts__item-description">+ 7 910 524 41 18</p>
           </li>
           <li class="contacts__item">
-            <svg class="contacts__item-icon" width="" height="">
-              <use xlink:href=""></use>
+            <svg class="contacts__item-icon" width="18" height="14">
+              <use xlink:href="./img/icons/stack.svg#mail"></use>
             </svg>
             <p class="contacts__item-description">info@yagoda.ru</p>
           </li>
         </ul>
       </div>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1494.8857145088605!2d30.330875105219373!3d59.91350160384013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1693814723738!5m2!1sru!2sru"
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5657.1027850386245!2d30.331985573287916!3d59.91408901586295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDU0JzQ5LjQiTiAzMMKwMTknNTEuOSJF!5e0!3m2!1sru!2sru!4v1693920009070!5m2!1sru!2sru"
+        width="320" height="372" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer__wrapper">
       <a class="footer__logo" href="#">
-        <picture></picture>
+        <span class="visually-hidden">Логотип магазина.</span>
       </a>
       <ul class="footer__list">
         <li class="footer__item">
           <a class="footer__link">
-            <svg class="footer__link-icon" width="" height="">
-              <use xlink:href=""></use>
+            <svg class="footer__link-icon" width="32" height="32">
+              <use xlink:href="./img/icons/stack.svg#telegram"></use>
             </svg>
+            <span class="visually-hidden">Телеграм.</span>
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link">
-            <svg class="footer__link-icon" width="" height="">
-              <use xlink:href=""></use>
+            <svg class="footer__link-icon" width="32" height="32">
+              <use xlink:href="./img/icons/stack.svg#vk"></use>
             </svg>
+            <span class="visually-hidden">Вконтакте.</span>
           </a>
         </li>
         <li class="footer__item">
           <a class="footer__link">
-            <svg class="footer__link-icon" width="" height="">
-              <use xlink:href=""></use>
+            <svg class="footer__link-icon" width="32" height="32">
+              <use xlink:href="./img/icons/stack.svg#youtube"></use>
             </svg>
+            <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
       </ul>
       <a class="footer__intensive" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-        <svg class="footer__intensive-icon" width="" height="">
-          <use xlink:href=""></use>
+        <svg class="footer__intensive-icon" width="110" height="24">
+          <use xlink:href="./img/icons/stack.svg#footer-developer"></use>
         </svg>
+        <span class="visually-hidden">Лендинг интенсива «HTML и CSS. Адаптивная вёрстка и автоматизация».</span>
       </a>
     </div>
   </footer>
 
   <script src="./js/script.js" defer></script>
+
 </body>
 
 </html>
