@@ -1,0 +1,146 @@
+.footer {
+  width: 100%;
+  background-color: #f1f6fc;
+}
+
+.footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+    min-height: 104px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+    min-height: 108px;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  width: 52px;
+  height: 52px;
+  background-image: url("../../img/icons/small-logo.svg");
+  background-color: #f1f6fc;
+  margin-left: 26px;
+  margin-top: 11px;
+  cursor: default;
+
+  @media (min-width: @tablet-width) {
+    width: 133px;
+    height: 60px;
+    background-image: url("../../img/icons/big-logo.svg");
+    margin-top: 22px;
+    margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 156px;
+    margin-top: 24px;
+  }
+}
+
+.footer__logo--form {
+  cursor: pointer;
+
+  &&:hover {
+    background-image: url("../../img/icons/small-logo-hover.svg");
+  }
+
+  &&:active {
+    background-image: url("../../img/icons/small-logo-down.svg");
+  }
+
+  &&:focus {
+    outline: 1px solid #6a107a;
+  }
+
+  @media (min-width: @tablet-width) {
+    &&:hover {
+      background-image: url("../../img/icons/big-logo-hover.svg");
+    }
+
+    &&:active {
+      background-image: url("../../img/icons/big-logo-down.svg");
+    }
+  }
+}
+
+.footer__list {
+  margin-top: 20px;
+  margin-left: 60px;
+  margin-bottom: 64px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-left: 82px;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 313px;
+  }
+}
+
+.footer__item {
+  margin-left: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 32px;
+  }
+}
+
+.footer__link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.footer__link-icon {
+  width: 32px;
+  height: 32px;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.footer__intensive {
+  position: absolute;
+  bottom: 20px;
+  right: 26px;
+  width: 110px;
+  height: 24px;
+
+  @media (min-width: @tablet-width) {
+    position: static;
+    width: 153px;
+    height: 32px;
+    margin-left: 106px;
+    margin-top: 39px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 308px;
+    margin-top: 40px;
+  }
+}

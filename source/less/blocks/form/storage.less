@@ -1,0 +1,142 @@
+.storage {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
+}
+
+.storage__title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0f805d;
+  margin: 0;
+  margin-left: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin-top: 0;
+    margin-left: 118px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 28px;
+    margin-bottom: 48px;
+    margin-left: 349px;
+  }
+}
+
+.storage__list {
+  padding: 0;
+  margin-left: 26px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 124px;
+  row-gap: 32px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 325px 235px;
+    row-gap: 24px;
+    column-gap: 42px;
+    margin-left: 118px;
+    margin-top: 40px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 211px 211px 211px;
+    column-gap: 48px;
+    margin-left: 349px;
+    margin-top: 0;
+    margin-bottom: 48px;
+  }
+}
+
+.storage__item {
+  display: flex;
+  align-items: center;
+  width: 202px;
+  height: 24px;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    width: 235px;
+  }
+}
+
+.storage__item--freezing {
+  @media (min-width: @tablet-width) {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+}
+
+.storage__description {
+  display: flex;
+  margin: 0;
+  font-size: 16px;
+  padding-left: 36px;
+  cursor: pointer;
+
+  &&:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.storage__check {
+  position: absolute;
+  appearance: none;
+}
+
+.storage__check-box {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  background-image: url("../../img/icons/check-box.svg");
+  background-color: #fbfcfe;
+  background-repeat: no-repeat;
+}
+
+.storage__check:disabled+.storage__check-box {
+  background-image: url("../../img/icons/check-box-disabled.svg");
+}
+
+.storage__check:focus+.storage__check-box {
+  outline: 1px solid #6a107a;
+}
+
+.storage__description:hover .storage__check-box {
+  background-image: url("../../img/icons/check-box-hover.svg");
+}
+
+.storage__check:checked+.storage__check-box {
+  background-image: url("../../img/icons/check-box-selected.svg");
+}
+
+.storage__description:hover .storage__check:checked+.storage__check-box {
+  background-image: url("../../img/icons/check-box-selected-hover.svg");
+}

@@ -1,0 +1,126 @@
+.delivery {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
+}
+
+.delivery__title {
+  font-size: 20px;
+  font-weight: 400;
+  color: #0f805d;
+  margin: 0;
+  margin-left: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin-top: 0;
+    margin-left: 118px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 28px;
+    margin-top: 0;
+    margin-left: 349px;
+    margin-bottom: 48px;
+  }
+}
+
+.delivery__list {
+  padding: 0;
+  margin: 0;
+  margin-left: 26px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    margin-left: 94px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 349px;
+  }
+}
+
+.delivery__item {
+  display: flex;
+  align-items: center;
+  width: 226.5px;
+  height: 57px;
+  position: relative;
+  margin-top: 32px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+    margin-left: 24px;
+    width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+    width: 360px;
+  }
+}
+
+.delivery__description {
+  display: flex;
+  margin: 0;
+  font-size: 16px;
+  padding-left: 36px;
+  cursor: pointer;
+
+  &&:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.delivery__radio {
+  position: absolute;
+  appearance: none;
+}
+
+.delivery__radio-box {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 16.5px;
+  left: 0;
+  background-image: url("../../img/icons/radio.svg");
+  background-color: #fbfcfe;
+  background-repeat: no-repeat;
+}
+
+.delivery__radio:disabled+.delivery__radio-box {
+  background-image: url("../../img/icons/radio-disabled.svg");
+}
+
+.delivery__radio:focus+.delivery__radio-box {
+  outline: 1px solid #6a107a;
+}
+
+.delivery__description:hover .delivery__radio-box {
+  background-image: url("../../img/icons/radio-hover.svg");
+}
+
+.delivery__radio:checked+.delivery__radio-box {
+  background-image: url("../../img/icons/radio-selected.svg");
+}
+
+.delivery__description:hover .delivery__radio:checked+.delivery__radio-box {
+  background-image: url("../../img/icons/radio-selected-hover.svg");
+}

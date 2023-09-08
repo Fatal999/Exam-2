@@ -27,13 +27,15 @@
 <body class="page-body">
 
   <header class="header">
-    <div class="header__wrapper">
-      <a class="header__logo header__logo--form" href="index.html">
-        <span class="visually-hidden">Логотип магазина.</span>
-      </a>
-      <button class="header__toggle" type="button">
-        <span class="visually-hidden">Открыть/закрыть меню.</span>
-      </button>
+    <nav class="header__navigation">
+      <div class="header__wrapper">
+        <a class="header__logo header__logo--form" href="index.html">
+          <span class="visually-hidden">Логотип магазина.</span>
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню.</span>
+        </button>
+      </div>
       <ul class="header__list">
         <li class="header__item">
           <a class="header__link" href="#">Каталог</a>
@@ -45,88 +47,86 @@
           <a class="header__link" href="#">Контакты</a>
         </li>
         <li class="header__item">
-          <a class="header__link" href="#">Заказы</a>
+          <a class="header__link" href="#">Заказать</a>
         </li>
       </ul>
-    </div>
-  </header>
+    </nav>
+  </header> 
 
   <main class="page-main">
     <section class="order">
-      <div class="order__wrapper">
         <h1 class="order__title">Закажи ягоды</h1>
         <p class="order__description">Мы соберем для вас ягоды и доставим их в удобном для вас виде - свежими или
           замороженными</p>
-      </div>
     </section>
     <form action="https://echo.htmlacademy.ru/" method="get">
       <section class="berries">
         <h2 class="berries__title">Выберите ягоды</h2>
         <ul class="berries__list">
-          <li class="berries__item">
+          <li class="berries__item berries__item--cowberry">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries">
               <span class="berries__check-box"></span>
               брусника
             </label>
           </li>
-          <li class="berries__item">
+          <li class="berries__item berries__item--gooseberry">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries">
               <span class="berries__check-box"></span>
               крыжовник
             </label>
           </li>
-          <li class="berries__item">
+          <li class="berries__item berries__item--chery">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries">
               <span class="berries__check-box"></span>
               вишня
             </label>
           </li>
-          <li class="berries__item">
+          <li class="berries__item berries__item--raspberry">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries">
               <span class="berries__check-box"></span>
               малина
             </label>
           </li>
-          <li class="berries__item">
+          <li class="berries__item berries__item--blueberry">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries">
               <span class="berries__check-box"></span>
               голубика
             </label>
           </li>
-          <li class="berries__item">
+          <li class="berries__item berries__item--cloudberry">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries" disabled>
               <span class="berries__check-box"></span>
               морошка
             </label>
           </li>
-          <li class="berries__item">
+          <li class="berries__item berries__item--blackberry">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries">
               <span class="berries__check-box"></span>
               ежевика
             </label>
           </li>
-          <li class="berries__item">
+          <li class="berries__item berries__item--bilberry">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries" disabled>
               <span class="berries__check-box"></span>
               черника
             </label>
           </li>
-          <li class="berries__item">
+          <li class="berries__item berries__item--strawberry">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries">
               <span class="berries__check-box"></span>
               клубника
             </label>
           </li>
-          <li class="berries__item">
+          <li class="berries__item berries__item--cranberry">
             <label class="berries__description">
               <input class="berries__check" type="checkbox" name="berries">
               <span class="berries__check-box"></span>
@@ -145,7 +145,7 @@
               свежие ягоды
             </label>
           </li>
-          <li class="storage__item">
+          <li class="storage__item storage__item--freezing">
             <label class="storage__description">
               <input class="storage__check" type="checkbox" name="storage">
               <span class="storage__check-box"></span>
@@ -168,7 +168,7 @@
             <label class="delivery__description">
               <input class="delivery__radio" type="radio" name="delivery" checked>
               <span class="delivery__radio-box"></span>
-              Доставка
+              Доставка<br>
               (по СПБ в пределах
               КАД)
             </label>
@@ -177,7 +177,7 @@
             <label class="delivery__description">
               <input class="delivery__radio" type="radio" name="delivery">
               <span class="delivery__radio-box"></span>
-              Самовывоз
+              Самовывоз<br>
               (Набережная Обводного канала, 101)
             </label>
           </li>
@@ -185,60 +185,73 @@
       </section>
       <section class="requisites">
         <h5 class="requisites__title">Ваши контакты</h5>
-        <div class="requisites__name">
-          <label class="requisites__name-description" for="name">Имя<span style="color:red">*</span></label>
-          <input class="requisites__name-field" id="name" type="text" placeholder="Как к вам обращаться?"
-            name="requisites" required>
-        </div>
-        <div class="requisites__tel">
-          <label class="requisites__tel-description" for="tel">Телефон<span style="color:red">*</span></label>
-          <input class="requisites__tel-field" id="tel" type="tel" placeholder="+7 ххх ххх хх хх" name="requisites"
-            required>
-        </div>
-        <div class="requisites__email">
-          <label class="requisites__email-description" for="email">Email<span style="color:red">*</span></label>
-          <input class="requisites__email-field" id="email" type="email" placeholder="Ваш email" name="requisites"
-            required>
-        </div>
-        <div class="requisites__adress">
-          <label class="requisites__adress-description" for="adress">Адрес<span style="color:red">*</span></label>
-          <input class="requisites__adress-field" id="adress" type="text" placeholder="Адрес в Санкт-Петербурге"
-            name="requisites" required>
-        </div>
-        <div class="requisites__additionally">
-          <p class="requisites__additionally-description">Пожелания к заказу</p>
-          <textarea class="requisites__additionally-area" placeholder="Чем мы можем вам помочь?"></textarea>
+        <div class="requisites__wrapper">
+          <div class="requisites__name">
+            <label class="requisites__name-description" for="name">Имя<span style="color:#ff8282">*</span></label>
+            <input class="requisites__name-field" id="name" type="text" placeholder="Как к вам обращаться?"
+              name="requisites" required>
+            <p class="requisites__name-error">Подсказка</p>
+          </div>
+          <div class="requisites__tel">
+            <label class="requisites__tel-description" for="tel">Телефон<span style="color:#ff8282">*</span></label>
+            <input class="requisites__tel-field" id="tel" type="tel" placeholder="+7 ххх ххх хх хх" name="requisites"
+              required>
+            <p class="requisites__tel-error">Подсказка</p>
+          </div>
+          <div class="requisites__email">
+            <label class="requisites__email-description" for="email">Email<span style="color:#ff8282">*</span></label>
+            <input class="requisites__email-field" id="email" type="email" placeholder="Ваш email" name="requisites"
+              required>
+            <p class="requisites__email-error">Подсказка</p>
+          </div>
+          <div class="requisites__adress">
+            <label class="requisites__adress-description" for="adress">Адрес<span style="color:#ff8282">*</span></label>
+            <input class="requisites__adress-field" id="adress" type="text" placeholder="Адрес в Санкт-Петербурге"
+              name="requisites" required>
+            <p class="requisites__adress-error">Подсказка</p>
+          </div>
+          <div class="requisites__additionally">
+            <p class="requisites__additionally-description">Пожелания к заказу</p>
+            <textarea class="requisites__additionally-area" placeholder="Чем мы можем вам помочь?"></textarea>
+          </div>
         </div>
         <button class="requisites__button button" type="submit">Заказать</button>
       </section>
     </form>
     <section class="contacts">
       <div class="contacts__wrapper">
-        <h6 class="contacts__title">Где забрать ягоды?</h6>
+        <h5 class="contacts__title">Где забрать ягоды?</h5>
         <p class="contacts__description">Забери ягоды с нашего склада по адресу:</p>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <svg class="contacts__item-icon" width="16" height="24">
-              <use xlink:href="./img/icons/stack.svg#contacts-leaf"></use>
-            </svg>
-            <p class="contacts__item-description">Набережная Обводного канала, 101</p>
+            <a class="contacts__link"
+              href="https://www.google.com/maps/place/%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F+%D0%9E%D0%B1%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0,+101,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+190013/@59.9133507,30.3286491,17z/data=!3m1!4b1!4m6!3m5!1s0x469630519ea47935:0x3458dd62ea82672d!8m2!3d59.913348!4d30.331224!16s%2Fg%2F11c2dyg7qr?hl=ru&entry=ttu">
+              <svg class="contacts__item-icon" width="16" height="24">
+                <use xlink:href="./img/icons/stack.svg#contacts-leaf"></use>
+              </svg>
+              Набережная Обводного канала, 101
+            </a>
           </li>
           <li class="contacts__item">
-            <svg class="contacts__item-icon" width="16" height="20">
-              <use xlink:href="./img/icons/stack.svg#phone"></use>
-            </svg>
-            <p class="contacts__item-description">+ 7 910 524 41 18</p>
+            <a class="contacts__link" href="tel:+79105244118">
+              <svg class="contacts__item-icon" width="16" height="20">
+                <use xlink:href="./img/icons/stack.svg#phone"></use>
+              </svg>
+              + 7 910 524 41 18
+            </a>
           </li>
           <li class="contacts__item">
-            <svg class="contacts__item-icon" width="18" height="14">
-              <use xlink:href="./img/icons/stack.svg#mail"></use>
-            </svg>
-            <p class="contacts__item-description">info@yagoda.ru</p>
+            <a class="contacts__link" href="mailto:info@yagoda.ru">
+              <svg class="contacts__item-icon" width="18" height="14">
+                <use xlink:href="./img/icons/stack.svg#mail"></use>
+              </svg>
+              info@yagoda.ru
+            </a>
           </li>
         </ul>
       </div>
       <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5657.1027850386245!2d30.331985573287916!3d59.91408901586295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDU0JzQ5LjQiTiAzMMKwMTknNTEuOSJF!5e0!3m2!1sru!2sru!4v1693920009070!5m2!1sru!2sru"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1323589223623!2d30.328649077406226!3d59.91335066413615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1694071543154!5m2!1sru!2sru"
         width="320" height="372" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
@@ -274,7 +287,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer__intensive" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+      <a class="footer__intensive" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="footer__intensive-icon" width="110" height="24">
           <use xlink:href="./img/icons/stack.svg#footer-developer"></use>
         </svg>
@@ -283,6 +296,7 @@
     </div>
   </footer>
 
+  <script src="./js/menu-form.js"></script>
   <script src="./js/script.js" defer></script>
 
 </body>

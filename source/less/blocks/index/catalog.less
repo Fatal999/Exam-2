@@ -1,0 +1,134 @@
+.catalog {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1440px;
+  }
+}
+
+.catalog__title {
+  font-family: "Comfortaa", "Arial", "Helvetica", sans-serif;
+  font-size: 36px;
+  color: #0f805d;
+  margin: 50px auto 40px auto;
+
+  @media (min-width: @tablet-width) {
+    font-size: 48px;
+    margin: 47px auto 72px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 52px;
+    margin: 103px auto 92px auto;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 264px 264px;
+    gap: 52px;
+    margin-left: 94px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 264px 264px 264px 264px;
+    column-gap: 24px;
+    row-gap: 52px;
+    margin-left: 156px;
+  }
+}
+
+.catalog__item {
+  width: 264px;
+  min-height: 432px;
+  box-shadow: 0px 4px 4px 0px rgba(88, 13, 101, 0.15);
+  border-radius: 40px;
+  background-color: #fbfcfe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.catalog__item--nomobile {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
+
+.catalog__link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &&:hover {
+    opacity: 0.6;
+  }
+
+  &&:active {
+    opacity: 0.3;
+  }
+
+  &&:focus {
+    outline: 1px solid #0f805d;
+  }
+}
+
+.catalog__image {
+  width: 264px;
+  height: 180px;
+  border-radius: 40px 40px 0 0;
+  display: block;
+}
+
+.catalog__caption {
+  font-size: 28px;
+  color: #0f805d;
+  margin-top: 28px;
+  margin-bottom: 28px;
+}
+
+.catalog__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.catalog__container-price {
+  margin: 0;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+.catalog__container-weight {
+  margin: 0;
+  font-size: 18px;
+}
+
+.catalog__item-button {
+  margin-top: 38px;
+  margin-bottom: 54px;
+  width: 220px;
+}

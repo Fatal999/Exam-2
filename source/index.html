@@ -27,13 +27,15 @@
 <body class="page-body">
 
   <header class="header">
-    <div class="header__wrapper">
-      <a class="header__logo" href="#">
-        <span class="visually-hidden">Логотип магазина.</span>
-      </a>
-      <button class="header__toggle" type="button">
-        <span class="visually-hidden">Открыть/закрыть меню.</span>
-      </button>
+    <nav class="header__navigation">
+      <div class="header__wrapper">
+        <a class="header__logo" href="#">
+          <span class="visually-hidden">Логотип магазина.</span>
+        </a>
+        <button class="header__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню.</span>
+        </button>
+      </div>
       <ul class="header__list">
         <li class="header__item">
           <a class="header__link" href="#">Каталог</a>
@@ -45,10 +47,10 @@
           <a class="header__link" href="#">Контакты</a>
         </li>
         <li class="header__item">
-          <a class="header__link" href="#">Заказы</a>
+          <a class="header__link" href="#">Заказать</a>
         </li>
       </ul>
-    </div>
+    </nav>
   </header>
 
   <main class="page-main">
@@ -86,7 +88,7 @@
               <img class="catalog__image" src="./img/index/raspberry.jpg" srcset="./img/index/raspberry@2x.jpg 2x"
                 width="344" height="180" alt="Малина.">
             </picture>
-            <h3 class="catalog__title">Малина</h3>
+            <h3 class="catalog__caption">Малина</h3>
           </a>
           <div class="catalog__container">
             <span class="catalog__container-price">350 ₽</span>
@@ -101,7 +103,7 @@
               <img class="catalog__image" src="./img/index/blackberry.jpg" srcset="./img/index/blackberry@2x.jpg 2x"
                 width="344" height="180" alt="Ежевика.">
             </picture>
-            <h3 class="catalog__title">Ежевика</h3>
+            <h3 class="catalog__caption">Ежевика</h3>
           </a>
           <div class="catalog__container">
             <span class="catalog__container-price">550 ₽</span>
@@ -116,7 +118,7 @@
               <img class="catalog__image" src="./img/index/cowberry.jpg" srcset="./img/index/cowberry@2x.jpg 2x"
                 width="344" height="180" alt="Брусника.">
             </picture>
-            <h3 class="catalog__title">Брусника</h3>
+            <h3 class="catalog__caption">Брусника</h3>
           </a>
           <div class="catalog__container">
             <span class="catalog__container-price">390 ₽</span>
@@ -131,7 +133,7 @@
               <img class="catalog__image" src="./img/index/strawberry.jpg" srcset="./img/index/strawberry@2x.jpg 2x"
                 width="344" height="180" alt="Клубника.">
             </picture>
-            <h3 class="catalog__title">Клубника</h3>
+            <h3 class="catalog__caption">Клубника</h3>
           </a>
           <div class="catalog__container">
             <span class="catalog__container-price">450 ₽</span>
@@ -146,7 +148,7 @@
               <img class="catalog__image" src="./img/index/cherry.jpg" srcset="./img/index/cherry@2x.jpg 2x" width="344"
                 height="180" alt="Вишня.">
             </picture>
-            <h3 class="catalog__title">Вишня</h3>
+            <h3 class="catalog__caption">Вишня</h3>
           </a>
           <div class="catalog__container">
             <span class="catalog__container-price">375 ₽</span>
@@ -161,7 +163,7 @@
               <img class="catalog__image" src="./img/index/gooseberry.jpg" srcset="./img/index/gooseberry@2x.jpg 2x"
                 width="344" height="180" alt="Крыжовник.">
             </picture>
-            <h3 class="catalog__title">Крыжовник</h3>
+            <h3 class="catalog__caption">Крыжовник</h3>
           </a>
           <div class="catalog__container">
             <span class="catalog__container-price">300 ₽</span>
@@ -169,14 +171,14 @@
           </div>
           <button class="catalog__item-button button">Заказать</button>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item catalog__item--nomobile">
           <a class="catalog__link" href="#">
             <picture>
               <source type="image/webp" srcset="./img/index/blueberry.webp, ./img/index/blueberry@2x.webp 2x">
               <img class="catalog__image" src="./img/index/blueberry.jpg" srcset="./img/index/blueberry@2x.jpg 2x"
                 width="344" height="180" alt="Голубика.">
             </picture>
-            <h3 class="catalog__title">Голубика</h3>
+            <h3 class="catalog__caption">Голубика</h3>
           </a>
           <div class="catalog__container">
             <span class="catalog__container-price">510 ₽</span>
@@ -184,14 +186,14 @@
           </div>
           <button class="catalog__item-button button">Заказать</button>
         </li>
-        <li class="catalog__item">
+        <li class="catalog__item catalog__item--nomobile">
           <a class="catalog__link" href="#">
             <picture>
               <source type="image/webp" srcset="./img/index/cranberry.webp, ./img/index/cranberry@2x.webp 2x">
               <img class="catalog__image" src="./img/index/cranberry.jpg" srcset="./img/index/cranberry@2x.jpg 2x"
                 width="344" height="180" alt="Клюква.">
             </picture>
-            <h3 class="catalog__title">Клюква</h3>
+            <h3 class="catalog__caption">Клюква</h3>
           </a>
           <div class="catalog__container">
             <span class="catalog__container-price">320 ₽</span>
@@ -242,27 +244,34 @@
         <p class="contacts__description">Забери ягоды с нашего склада по адресу:</p>
         <ul class="contacts__list">
           <li class="contacts__item">
-            <svg class="contacts__item-icon" width="16" height="24">
-              <use xlink:href="./img/icons/stack.svg#contacts-leaf"></use>
-            </svg>
-            <p class="contacts__item-description">Набережная Обводного канала, 101</p>
+            <a class="contacts__link"
+              href="https://www.google.com/maps/place/%D0%BD%D0%B0%D0%B1%D0%B5%D1%80%D0%B5%D0%B6%D0%BD%D0%B0%D1%8F+%D0%9E%D0%B1%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE+%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0,+101,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+190013/@59.9133507,30.3286491,17z/data=!3m1!4b1!4m6!3m5!1s0x469630519ea47935:0x3458dd62ea82672d!8m2!3d59.913348!4d30.331224!16s%2Fg%2F11c2dyg7qr?hl=ru&entry=ttu">
+              <svg class="contacts__item-icon" width="16" height="24">
+                <use xlink:href="./img/icons/stack.svg#contacts-leaf"></use>
+              </svg>
+              Набережная Обводного канала, 101
+            </a>
           </li>
           <li class="contacts__item">
-            <svg class="contacts__item-icon" width="16" height="20">
-              <use xlink:href="./img/icons/stack.svg#phone"></use>
-            </svg>
-            <p class="contacts__item-description">+ 7 910 524 41 18</p>
+            <a class="contacts__link" href="tel:+79105244118">
+              <svg class="contacts__item-icon" width="16" height="20">
+                <use xlink:href="./img/icons/stack.svg#phone"></use>
+              </svg>
+              + 7 910 524 41 18
+            </a>
           </li>
           <li class="contacts__item">
-            <svg class="contacts__item-icon" width="18" height="14">
-              <use xlink:href="./img/icons/stack.svg#mail"></use>
-            </svg>
-            <p class="contacts__item-description">info@yagoda.ru</p>
+            <a class="contacts__link" href="mailto:info@yagoda.ru">
+              <svg class="contacts__item-icon" width="18" height="14">
+                <use xlink:href="./img/icons/stack.svg#mail"></use>
+              </svg>
+              info@yagoda.ru
+            </a>
           </li>
         </ul>
       </div>
       <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d5657.1027850386245!2d30.331985573287916!3d59.91408901586295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDU0JzQ5LjQiTiAzMMKwMTknNTEuOSJF!5e0!3m2!1sru!2sru!4v1693920009070!5m2!1sru!2sru"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.1323589223623!2d30.328649077406226!3d59.91335066413615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469630519ea47935%3A0x3458dd62ea82672d!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0J7QsdCy0L7QtNC90L7Qs9C-INC60LDQvdCw0LvQsCwgMTAxLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkwMDEz!5e0!3m2!1sru!2sru!4v1694071543154!5m2!1sru!2sru"
         width="320" height="372" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
   </main>
@@ -298,7 +307,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer__intensive" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+      <a class="footer__intensive" href="https://htmlacademy.ru/intensive/adaptive">
         <svg class="footer__intensive-icon" width="110" height="24">
           <use xlink:href="./img/icons/stack.svg#footer-developer"></use>
         </svg>
@@ -307,6 +316,7 @@
     </div>
   </footer>
 
+  <script src="./js/menu-index.js"></script>
   <script src="./js/script.js" defer></script>
 
 </body>
