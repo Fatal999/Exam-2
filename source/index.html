@@ -20,7 +20,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="/manifest.webmanifest">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
@@ -300,26 +300,17 @@
       </a>
       <ul class="footer__list">
         <li class="footer__item">
-          <a class="footer__link">
-            <svg class="footer__link-icon" width="32" height="32">
-              <use xlink:href="./img/icons/stack.svg#telegram"></use>
-            </svg>
+          <a class="footer__link footer__link--telegram" href="#">
             <span class="visually-hidden">Телеграм.</span>
           </a>
         </li>
         <li class="footer__item">
-          <a class="footer__link">
-            <svg class="footer__link-icon" width="32" height="32">
-              <use xlink:href="./img/icons/stack.svg#vk"></use>
-            </svg>
+          <a class="footer__link footer__link--vk" href="#">
             <span class="visually-hidden">Вконтакте.</span>
           </a>
         </li>
         <li class="footer__item">
-          <a class="footer__link">
-            <svg class="footer__link-icon" width="32" height="32">
-              <use xlink:href="./img/icons/stack.svg#youtube"></use>
-            </svg>
+          <a class="footer__link footer__link--youtube" href="#">
             <span class="visually-hidden">Ютуб.</span>
           </a>
         </li>
@@ -334,7 +325,6 @@
   </footer>
 
   <script src="./js/menu-index.js"></script>
-  <script src="./js/script.js" defer></script>
 
 </body>
 
