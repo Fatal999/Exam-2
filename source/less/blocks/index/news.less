@@ -3,11 +3,12 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 96px;
   background-image: url("../../img/index/branch-leaf.svg");
   background-color: #fbfcfe;
+  background-size: 228px 32px;
   background-repeat: no-repeat;
-  background-position: 48px 20px;
+  background-position: 48px 0;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -27,7 +28,7 @@
   font-size: 36px;
   color: #0f805d;
   width: 265px;
-  margin: 64px auto 40px auto;
+  margin: 0 auto 40px auto;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -45,6 +46,7 @@
 .news__list {
   margin: 0;
   padding: 0;
+  margin-bottom: 64px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -67,7 +69,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 268px;
+  width: 264px;
   margin: 0 auto;
   min-height: 396px;
   border: 2px solid #0f805d;
@@ -92,9 +94,10 @@
 .news__item-title {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 204px;
   min-height: 68px;
-  margin: 32px auto 20px auto;
+  margin: 28px auto 21px auto;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -103,6 +106,10 @@
     width: 276px;
     margin: 32px auto 24px auto;
   }
+}
+
+.news__item-title--special {
+  margin-bottom: 17px;
 }
 
 .news__item-description {
@@ -121,8 +128,9 @@
 .news__item-date {
   font-size: 14px;
   width: 97px;
-  margin-left: 131px;
+  margin-left: 150px;
   margin-bottom: 16px;
+  margin-top: 13px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
@@ -135,11 +143,9 @@
 .news__item-icon {
   width: 76px;
   height: 32px;
-  margin-bottom: 24px;
 
   @media (min-width: @tablet-width) {
     width: 96px;
     height: 40px;
-    margin-bottom: 42px;
   }
 }

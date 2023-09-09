@@ -9,7 +9,7 @@
   align-items: center;
   background-image: url("../../img/index/promo-background-mobile.jpg");
   background-color: #fbfcfe;
-  background-position: 0 -8px;
+  background-position: 0 0;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -47,11 +47,18 @@
 
 .promo__title {
   font-family: "Comfortaa", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   color: #0f805d;
   width: 265px;
-  margin: 70px auto 20px auto;
+  margin: 68px auto 20px auto;
   text-align: center;
+
+  br {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 48px;
@@ -87,17 +94,34 @@
 .promo__item {
   display: flex;
   align-items: center;
-  margin-top: 12px;
+  margin-top: 16px;
 
   @media (min-width: @tablet-width) {
     margin-top: 19px;
   }
 }
 
-.promo__item-icon {
-  width: 32px;
+.promo__item-icon--leaf {
+  width: 21px;
+  height: 22px;
+  margin-right: 19px;
+  margin-left: 5px;
+}
+
+.promo__item-icon--snowflake {
+  width: 25px;
+  height: 24px;
+  margin-top: 7px;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+
+.promo__item-icon--moto {
+  width: 33px;
   height: 32px;
-  margin-right: 12px;
+  margin-top: 9px;
+  margin-right: 11px;
+  margin-left: 0;
 }
 
 .promo__item-description {
@@ -113,8 +137,10 @@
 
 .promo__link {
   text-decoration: none;
-  margin-top: 48px;
-  margin-bottom: 195px;
+  margin-top: 55px;
+  margin-bottom: 205px;
+  padding-right: 5px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 28px;

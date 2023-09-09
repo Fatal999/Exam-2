@@ -3,11 +3,12 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 96px;
+  padding-top: 118px;
   background-image: url("../../img/index/branch-leaf.svg");
   background-color: #fbfcfe;
   background-repeat: no-repeat;
-  background-position: 40px 20px;
+  background-position: 48px 0;
+  background-size: 228px 32px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -42,7 +43,7 @@
   font-size: 36px;
   color: #0f805d;
   width: 266px;
-  margin: 86px auto 64px auto;
+  margin: 0 30px 62px auto;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -62,7 +63,7 @@
   font-size: 16px;
   width: 266px;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 23px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
@@ -97,16 +98,19 @@
 }
 
 .contacts__item {
-  margin-top: 12px;
+  margin-top: 11px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
 }
 
 .contacts__link {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   font-size: 14px;
   color: @black;
   text-decoration: none;
+  overflow: hidden;
 
   &&:hover {
     color: #7bdb0a;
@@ -126,11 +130,29 @@
 }
 
 .contacts__item-icon {
-  display: flex;
-  width: 32px;
-  height: 32px;
-  margin-right: 4px;
   fill: @black
+}
+
+.contacts__item-icon--leaf {
+  width: 16px;
+  height: 24px;
+  margin-right: 11px;
+  margin-left: 7px;
+}
+
+.contacts__item-icon--phone {
+  width: 16px;
+  height: 20px;
+  margin-right: 11px;
+  margin-left: 7px;
+}
+
+.contacts__item-icon--mail {
+  width: 18px;
+  height: 14px;
+  margin-top: 3px;
+  margin-right: 11px;
+  margin-left: 5px;
 }
 
 .contacts__link:hover .contacts__item-icon {
