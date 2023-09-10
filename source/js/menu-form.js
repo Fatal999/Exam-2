@@ -9,11 +9,7 @@ list.classList.add('header__list--close');
 order.classList.add('order--close');
 
 toggle.onclick = function () {
- toggle.classList.toggle('header__toggle--open');
- list.classList.toggle('header__list--close');
- order.classList.toggle('order--close');
+  toggle.classList.toggle('header__toggle--open');
+  list.classList.toggle('header__list--close');
+  order.classList.toggle('order--close');
 }
-
-
-
-

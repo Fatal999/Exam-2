@@ -119,12 +119,12 @@
     font-size: 28px;
     min-height: 100px;
     width: 276px;
-    margin: 32px auto 20px auto;
+    margin: 32px auto 25px auto;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     width: 300px;
-    margin-left: 27px;
+    margin: 32px auto 20px auto;
   }
 }
 
@@ -162,6 +162,7 @@
 
   @media (min-width: @desktop-width) {
     width: 290px;
+    margin-left: 3px;
   }
 }
 
@@ -180,7 +181,9 @@
 }
 
 .news__item-description-tablet--desktop {
-  display: none;
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
 }
 
 .news__item-description-dektop {
@@ -206,7 +209,7 @@
     margin-top: 16px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     margin-left: 197px;
   }
 }

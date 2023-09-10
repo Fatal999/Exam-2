@@ -16,7 +16,6 @@
 .delivery__title {
   font-weight: 400;
   font-size: 20px;
-  font-weight: 400;
   color: #0f805d;
   margin: 0;
   margin-left: 26px;
@@ -32,7 +31,7 @@
     font-size: 28px;
     margin-top: 0;
     margin-left: 349px;
-    margin-bottom: 48px;
+    margin-bottom: 42px;
   }
 }
 
@@ -70,7 +69,7 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
-    width: 360px;
+    width: 300px;
   }
 }
 
@@ -78,6 +77,10 @@
   @media (min-width: @tablet-width) {
     margin-left: 0;
     width: 250px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 360px;
   }
 }
 
@@ -113,22 +116,22 @@
   background-repeat: no-repeat;
 }
 
-.delivery__radio:disabled+.delivery__radio-box {
+.delivery__radio:disabled + .delivery__radio-box {
   background-image: url("../../img/form/radio-disabled.svg");
 }
 
-.delivery__radio:focus+.delivery__radio-box {
-  outline: 1px solid #6a107a;
+.delivery__radio:focus + .delivery__radio-box {
+  outline: 1px solid @purple;
 }
 
 .delivery__description:hover .delivery__radio-box {
   background-image: url("../../img/form/radio-hover.svg");
 }
 
-.delivery__radio:checked+.delivery__radio-box {
+.delivery__radio:checked + .delivery__radio-box {
   background-image: url("../../img/form/radio-selected.svg");
 }
 
-.delivery__description:hover .delivery__radio:checked+.delivery__radio-box {
+.delivery__description:hover .delivery__radio:checked + .delivery__radio-box {
   background-image: url("../../img/form/radio-selected-hover.svg");
 }

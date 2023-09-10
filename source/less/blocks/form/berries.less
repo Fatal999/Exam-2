@@ -27,7 +27,6 @@
 .berries__title {
   font-weight: 400;
   font-size: 20px;
-  font-weight: 400;
   color: #0f805d;
   margin-top: 7px;
   margin-bottom: 0;
@@ -35,7 +34,6 @@
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
-    margin-top: 73px;
     margin-left: 118px;
     margin-top: 0;
   }
@@ -255,22 +253,22 @@
   background-repeat: no-repeat;
 }
 
-.berries__check:disabled+.berries__check-box {
+.berries__check:disabled + .berries__check-box {
   background-image: url("../../img/form/check-box-disabled.svg");
 }
 
-.berries__check:focus+.berries__check-box {
-  outline: 1px solid #6a107a;
+.berries__check:focus + .berries__check-box {
+  outline: 1px solid @purple;
 }
 
 .berries__description:hover .berries__check-box {
   background-image: url("../../img/form/check-box-hover.svg");
 }
 
-.berries__check:checked+.berries__check-box {
+.berries__check:checked + .berries__check-box {
   background-image: url("../../img/form/check-box-selected.svg");
 }
 
-.berries__description:hover .berries__check:checked+.berries__check-box {
+.berries__description:hover .berries__check:checked + .berries__check-box {
   background-image: url("../../img/form/check-box-selected-hover.svg");
 }

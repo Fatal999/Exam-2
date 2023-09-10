@@ -9,11 +9,7 @@ list.classList.add('header__list--close');
 promo.classList.add('promo--close');
 
 toggle.onclick = function () {
- toggle.classList.toggle('header__toggle--open');
- list.classList.toggle('header__list--close');
- promo.classList.toggle('promo--close');
+  toggle.classList.toggle('header__toggle--open');
+  list.classList.toggle('header__list--close');
+  promo.classList.toggle('promo--close');
 }
-
-
-
-

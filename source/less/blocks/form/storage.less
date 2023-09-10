@@ -16,7 +16,6 @@
 .storage__title {
   font-weight: 400;
   font-size: 20px;
-  font-weight: 400;
   color: #0f805d;
   margin: 0;
   margin-left: 26px;
@@ -54,7 +53,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 211px 211px 211px;
+    grid-template-columns: 157px 223px 166px;
     column-gap: 48px;
     margin-left: 349px;
     margin-top: 0;
@@ -105,6 +104,10 @@
     font-size: 18px;
     padding-left: 48px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 35px;
+  }
 }
 
 .storage__description--mix {
@@ -129,22 +132,22 @@
   background-repeat: no-repeat;
 }
 
-.storage__check:disabled+.storage__check-box {
+.storage__check:disabled + .storage__check-box {
   background-image: url("../../img/form/check-box-disabled.svg");
 }
 
-.storage__check:focus+.storage__check-box {
-  outline: 1px solid #6a107a;
+.storage__check:focus + .storage__check-box {
+  outline: 1px solid @purple;
 }
 
 .storage__description:hover .storage__check-box {
   background-image: url("../../img/form/check-box-hover.svg");
 }
 
-.storage__check:checked+.storage__check-box {
+.storage__check:checked + .storage__check-box {
   background-image: url("../../img/form/check-box-selected.svg");
 }
 
-.storage__description:hover .storage__check:checked+.storage__check-box {
+.storage__description:hover .storage__check:checked + .storage__check-box {
   background-image: url("../../img/form/check-box-selected-hover.svg");
 }
