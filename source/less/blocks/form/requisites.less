@@ -14,6 +14,7 @@
 }
 
 .requisites__title {
+  font-weight: 400;
   font-size: 20px;
   font-weight: 400;
   color: #0f805d;
@@ -23,7 +24,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 28px;
-    margin: 45px auto 0 auto;
+    margin: 50px auto 0 auto;
   }
 
   @media (min-width: @desktop-width) {
@@ -80,7 +81,7 @@
   border-radius: 20px;
   padding-left: 12px;
   box-sizing: border-box;
-  margin-top: 4px;
+  margin-top: 2px;
 
   &&:invalid {
     border: 1px solid #ff8282;
@@ -100,6 +101,7 @@
 
   @media (min-width: @tablet-width) {
     width: 300px;
+    margin-top: 5px;
   }
 }
 
@@ -149,14 +151,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: black;
+  color: @black;
   width: 268px;
   min-height: 52px;
   border: 1px solid #0f805d;
   border-radius: 20px;
   padding-left: 12px;
   box-sizing: border-box;
-  margin-top: 4px;
+  margin-top: 3px;
 
   &&:invalid {
     border: 1px solid #ff8282;
@@ -225,7 +227,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: black;
+  color: @black;
   width: 268px;
   min-height: 52px;
   border: 1px solid #0f805d;
@@ -294,6 +296,7 @@
   line-height: 20px;
   margin: 0;
   margin-left: 12px;
+  margin-bottom: 2px;
 }
 
 .requisites__adress-field {
@@ -301,7 +304,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: black;
+  color: @black;
   width: 268px;
   min-height: 88px;
   border: 1px solid #0f805d;
@@ -309,7 +312,7 @@
   padding-left: 12px;
   padding-bottom: 30px;
   box-sizing: border-box;
-  margin-top: 4px;
+  margin-top: 2px;
 
   &&:invalid {
     border: 1px solid #ff8282;
@@ -329,7 +332,7 @@
 
   @media (min-width: @tablet-width) {
     width: 624px;
-    min-height: 52px;
+    min-height: 50px;
     padding-bottom: 0;
   }
 }
@@ -384,7 +387,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: black;
+  color: @black;
   width: 268px;
   min-height: 124px;
   border: 1px solid #0f805d;
@@ -418,12 +421,15 @@
 }
 
 .requisites__button {
-  margin: 32px auto 0 auto;
+  margin: -2px auto 89px auto;
+  padding-right: 10px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    margin: 40px auto 0 auto;
+    margin: 40px auto 100px auto;
     width: 336px;
     min-height: 68px;
+    font-size: 28px;
   }
 
   @media (min-width: @desktop-width) {

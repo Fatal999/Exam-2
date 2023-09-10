@@ -47,6 +47,7 @@
 
 .order__title {
   font-family: "Comfortaa", "Arial", "Helvetica", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   color: #0f805d;
   width: 268px;
@@ -54,24 +55,45 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    font-size: 48px;
-    width: auto;
-    margin: 300px auto 48px auto;
+    font-size: 52px;
+    width: 532px;
+    margin: 300px auto 48px 115px;
   }
 
   @media (min-width: @desktop-width) {
-    font-size: 52px;
+    margin-left: auto;
   }
 }
 
 .order__description {
   font-size: 16px;
-  width: 268px;
+  width: 215px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 41px;
 
   @media (min-width: @tablet-width) {
     font-size: 18px;
+    line-height: 22px;
     width: 532px;
+    margin-left: 115px;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 455px;
+    margin-bottom: 46px;
+  }
+}
+
+.order__description-tablet {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

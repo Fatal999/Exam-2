@@ -3,41 +3,45 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 73px;
+  padding-top: 72px;
   background-image: url("../../img/index/branch-leaf.svg");
   background-color: #fbfcfe;
   background-repeat: no-repeat;
-  background-position: 48px 20px;
+  background-size: 228px 32px;
+  background-position: 48px 0;
 
   @media (min-width: @tablet-width) {
     width: 768px;
-    background-position: 236px 20px;
+    padding-top: 115px;
+    background-position: 236px 0;
     background-size: 296px 42px;
   }
 
   @media (min-width: @desktop-width) {
     width: 1440px;
-    background-position: 572px 20px;
+    padding-top: 104px;
+    background-position: 572px 0;
   }
 }
 
 .berries__title {
+  font-weight: 400;
   font-size: 20px;
   font-weight: 400;
   color: #0f805d;
-  margin-top: 50px;
+  margin-top: 7px;
   margin-bottom: 0;
   margin-left: 26px;
 
   @media (min-width: @tablet-width) {
-    font-size: 20px;
+    font-size: 28px;
     margin-top: 73px;
     margin-left: 118px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 28px;
-    margin-top: 62px;
     margin-left: 349px;
   }
 }
@@ -56,17 +60,17 @@
   @media (min-width: @tablet-width) {
     grid-template-columns: 124px 124px 124px;
     row-gap: 24px;
-    column-gap: 66px;
+    column-gap: 60px;
     margin-left: 118px;
     margin-top: 40px;
     margin-bottom: 50px;
   }
 
   @media (min-width: @desktop-width) {
-    grid-template-columns: 124px 124px 124px 124px 124px;
+    grid-template-columns: 118px 115px 117px 134px 115px;
     column-gap: 48px;
     margin-left: 349px;
-    margin-top: 40px;
+    margin-top: 48px;
     margin-bottom: 57px;
   }
 }
