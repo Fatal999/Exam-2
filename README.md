@@ -1,56 +1,26 @@
-# accelerator-first-project
-Стартовый репозиторий для работы над первым проектом в «Акселераторе» профессии «Фронтенд-разработчик»
+<div id="header" align="center">
 
-## Начало работы
+  # <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExejR6N2V1N3VoOHlwN3VmOWZqZm5waWdwbTM3d20wNzNpNnppd2ViYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ymwg2hvAKuuuiDN1x3/giphy.gif" width="45"> Greetings, friend <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExejR6N2V1N3VoOHlwN3VmOWZqZm5waWdwbTM3d20wNzNpNnppd2ViYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/ymwg2hvAKuuuiDN1x3/giphy.gif" width="45">
+  <img src="source/img/icons/fatals-gif.gif" width="150" alt="Fatals gif"/>
 
-1. Установите node.js
-2. Проверьте версию node.js с помощью `node --version`
-3. Поддерживаемая версия сборки 18+
-4. Установите зависимости с помощью
+  <div id="badges">
+    <a href="https://t.me/euronymous_ts">
+      <img src="https://img.shields.io/badge/Telegram-blue?logo=telegram&logoColor=white" alt="Telegram Badge"/>
+    </a>
+    <a href="https://www.instagram.com/fatal_1703?igsh=cGl2dHhoYmxteGJz&utm_source=qr">
+      <img src="https://img.shields.io/badge/Instagram-red?logo=instagram&logoColor=white" alt="Instagram Badge"/>
+    </a>
+    <a href="https://vk.com/fatal999">
+      <img src="https://img.shields.io/badge/VKontakte-blue?logo=vk&logoColor=white" alt="VK Badge"/>
+    </a>
+  </div>
 
-```shell
-npm i
-```
+  <img src="https://komarev.com/ghpvc/?username=your-github-fatal999&style=flat-square&color=blue" alt="Statistics"/>
 
-5. Запустите проект с помощью 
+  ## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="45"> This is my study project
 
-```shell
-npm run dev
-```
+  ## <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWkwbHVxbGZuemxxbnh2azl5MnI1MjNlejRydXh4ZnVjNXkxNXU1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Nn97Knvcol0rENwFk5/giphy.gif" width="35" height="35"> Stack: HTML, CSS, JS, Less, Gulp
 
-6. Дополнительные команды для работы со сборкой
-
-- `npm run convert-rastr`: создайте webp версии растровых изображений в папке `source/img/`;
-- `npm run dev` запускает сервер для разработки;
-- `npm run build` собирает оптимизированную версию проекта в папке `dist`;
-- `npm run preview` запускает сервер с оптимизированной версией;
-- спрайт с иконками собран из файлов в папке `source/img/sprite/`;
-- для доступа к спрайту из `html` используйте путь `href="/__spritemap#sprite-{название файла иконки}"`;
-
-7. В файле `index.html` в папке `source` описаны подсказки по структуре вашего проекта.
-
-## Самопроверки
-
-Тестирование Pixel Perfect
-
-Запустить тестирование вашего проекта можно с помощью
-
-```shell
-npm run test 
-```
-
-Тестовый фреймворк обращается к адресу `localhost:3000` поэтому сервер должен быть запущен с `npm run dev`, запускайте команду тестирования в новом терминале, не закрывая сервер с проектом.
-
-На windows масштаб дисплея в системе 100%
-
-
-В проекте используется множество дополнительных инструментов для самопроверки. Используйте их во время работы и перед отправкой вашего проекта:
-
-- `npm run w3c`: проверяет валидность HTML;
-- `npm run linthtml`: проверяет разметку по правилам linthtml;
-- `npm run html-validate`: проверяет HTML;
-- `npm run lint-bem`: проверяет БЭМ;
-- `npm run stylelint`: проверяет стили по правилам stylelint;
-- `npm run lint-js`: проверяет скрипты по правилам eslint;
-- `npm run ls-lint`: проверяет именование файлов и папок;
-- `npm run editorconfig`: проверяет editorconfig.
+  ## GitHub Pages: https://fatal999.github.io/Mishka-study-project/
+  
+</div>
