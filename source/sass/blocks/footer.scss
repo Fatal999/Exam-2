@@ -21,7 +21,7 @@
 .footer__logo {
   width: 100px;
   height: 20px;
-  margin: 40px 205px 30px 15px;
+  margin: 40px auto 30px auto;
 
   @media (min-width: $tablet-width) {
     width: 110px;
@@ -137,6 +137,7 @@
   padding: 0;
   width: 290px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 10px auto 40px auto;
 
