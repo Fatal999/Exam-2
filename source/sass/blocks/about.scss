@@ -55,7 +55,7 @@
   }
 }
 
-.about > span {
+.about>span {
   width: 290px;
   margin: 0 15px 36px 15px;
 
@@ -65,7 +65,7 @@
     font-size: 16px;
     font-weight: 300;
     line-height: 24px;
-    margin:  0 auto 36px auto;
+    margin: 0 auto 36px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -171,7 +171,7 @@
   margin: 0;
   border: none;
   z-index: 1;
-  background-image: url("../../img/sprite/play-icon.svg");
+  background-image: url("../../source/img/sprite/play-icon.svg");
 
   @media (min-width: $tablet-width) {
     bottom: 84px;
@@ -187,7 +187,7 @@
   }
 
   &:hover {
-    background-image: url("../../img/sprite/play-icon-hover.svg");
+    background-image: url("../../source/img/sprite/play-icon-hover.svg");
     background-size: 72px 72px;
 
     @media (min-width: $desktop-width) {
@@ -196,7 +196,7 @@
   }
 
   &:focus {
-    background-image: url("../../img/sprite/play-icon-focus.svg");
+    background-image: url("../../source/img/sprite/play-icon-focus.svg");
     background-size: 72px 72px;
     border: none;
     outline: none;
@@ -207,7 +207,7 @@
   }
 
   &:active {
-    background-image: url("../../img/sprite/play-icon-active.svg");
+    background-image: url("../../source/img/sprite/play-icon-active.svg");
     background-size: 72px 72px;
 
     @media (min-width: $desktop-width) {
@@ -216,7 +216,7 @@
   }
 
   &:disabled {
-    background-image: url("../../img/sprite/play-icon-disabled.svg");
+    background-image: url("../../source/img/sprite/play-icon-disabled.svg");
     background-size: 72px 72px;
 
     @media (min-width: $desktop-width) {
