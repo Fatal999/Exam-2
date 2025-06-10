@@ -316,14 +316,12 @@
 }
 
 .price__item-wrapper-rub {
-  width: 24px;
-  height: 33px;
+  width: 30px;
+  height: 42px;
   z-index: 3;
   margin-left: 10px;
 
   @media (min-width: $tablet-width) {
-    width: 30px;
-    height: 42px;
     margin-left: 14px;
   }
 }

@@ -13,6 +13,10 @@
   }
 }
 
+.swiper-wrapper--reviews {
+  margin: 0;
+}
+
 .reviews-title {
   font-family: "Alumni Sans", "Arial", "Helvetica", sans-serif;
   font-size: 32px;
@@ -115,7 +119,7 @@
   line-height: 22px;
   width: 190px;
   text-align: center;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 320px;
