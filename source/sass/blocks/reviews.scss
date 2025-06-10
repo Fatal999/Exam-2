@@ -62,10 +62,11 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    padding-top: 50px;
   }
 }
 
-.swiper-slide--reviews > picture {
+.swiper-slide--reviews>picture {
   width: 68px;
   height: 68px;
   margin: 30px auto 10px auto;
@@ -83,20 +84,20 @@
   }
 }
 
-.swiper-slide--reviews > picture > img {
+.swiper-slide--reviews>picture>img {
   @media (min-width: $tablet-width) {
     width: 80px;
     height: 80px;
   }
 }
 
-.swiper-slide--reviews > span {
+.swiper-slide--reviews>span {
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 18px;
   color: $white;
   font-weight: 400;
   line-height: 20px;
-  margin: 0 auto 16px auto;
+  margin: 0 auto 16px 70px;
 
   @media (min-width: $tablet-width) {
     font-size: 22px;
@@ -106,7 +107,7 @@
   }
 }
 
-.swiper-slide--reviews > p {
+.swiper-slide--reviews>p {
   font-family: "Roboto Condensed", "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   color: $white;
