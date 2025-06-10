@@ -9,6 +9,6 @@
 import './hero.js';
 import './price.js';
 import './video.js';
-import './juri.js';
+// import './juri.js';
 import './faq.js';
 import './form.js';
