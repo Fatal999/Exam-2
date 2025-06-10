@@ -47,9 +47,6 @@
     "vitest": "^0.34.6",
     "w3c-html-validator": "1.7.0"
   },
-  "dependencies": {
-    "swiper": "^11.0.7"
-  },
   "engines": {
     "node": ">=18.18"
   },
